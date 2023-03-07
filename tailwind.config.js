@@ -13,6 +13,7 @@ module.exports = {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
+        "3xl": "100vw",
       },
       colors: {
         "color-gray": {
@@ -28,6 +29,7 @@ module.exports = {
         "color-red": "#ED4245",
         "color-white": "#FFFFFF",
         "color-black": "#000000",
+        transparent: "transparent",
       },
       spacing: {
         px: "1px",

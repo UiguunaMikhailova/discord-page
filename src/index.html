@@ -8,24 +8,77 @@
     <title>Discord</title>
 </head>
 <body>
-    <div class="bg-color-gray-500 text-color-gray-100 font-sans text-base font-semibold">
-        <header>
-            <h1 class="">Discord</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <svg></svg>
-                        <p>Личные сообщения</p>
+    <div class="flex flex-row h-full w-full bg-color-gray-500 text-color-gray-100 font-sans text-base font-semibold">
+        <header class="flex flex-col w-14 mt-1 ml-2 mr-2 items-center">
+            <h1 class="text-xs tracking-widest">Discord</h1>
+            <nav class="mt-2">
+                <ul class="flex flex-col items-center">
+                    <li class="mb-2 relative flex flex-col items-center group cursor-pointer">
+                        <div class="bg-color-gray-400 w-12 h-12 rounded-full group-hover:rounded-2xl flex justify-center">
+                           <img class="w-7" src="assets/icons/discord.svg" />
+                        </div>
+                        <p class="opacity-0 transition-opacity duration-300 group-hover:opacity-100 absolute left-16 top-2 p-1 border-0 rounded-md text-sm w-40 flex justify-center bg-color-gray-500">Личные сообщения</p>
+                        <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
                     </li>
-                    <li>
-                        <ul></ul>
+                    <li class="mb-2 flex flex-col items-center">
+                        <ul class="flex flex-col gap-2" id="menu__list">
+                        </ul>
+                        <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
+                    </li>
+                    <li class="mb-2 relative flex flex-col items-center group cursor-pointer">
+                        <div class="bg-color-gray-400 w-12 h-12 rounded-full group-hover:rounded-2xl flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                              </svg>
+                        </div>
+                        <p class="opacity-0 transition-opacity duration-300 group-hover:opacity-100 absolute left-16 top-2 p-1 border-0 rounded-md text-sm w-40 flex justify-center bg-color-gray-500">Добавить сервер</p>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="bg-color-gray-300">
+        <main class="flex rounded-l-lg flex-row w-full mt-6 bg-color-gray-300">
             <aside class="bg-color-gray-400">
-                <div>
+                <!-- <div>
+                    <div class="relative inline-block text-left">
+                        <div>
+                          <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            Options
+                            <div id="menu-icon">
+                                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                          </button>
+                        </div>
+                        
+                          Dropdown menu, show/hide based on menu state.
+                      
+                          Entering: "transition ease-out duration-100"
+                            From: "transform opacity-0 scale-95"
+                            To: "transform opacity-100 scale-100"
+                          Leaving: "transition ease-in duration-75"
+                            From: "transform opacity-100 scale-100"
+                            To: "transform opacity-0 scale-95"
+                        
+                        <div class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                          <div class="py-1" role="none">
+                            Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700"
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
+                          </div>
+                          <div class="py-1" role="none">
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a>
+                          </div>
+                          <div class="py-1" role="none">
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a>
+                          </div>
+                          <div class="py-1" role="none">
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a>
+                          </div>
+                        </div>
+                      </div>
                     <h3>Название</h3>
                     <button>w</button>
                     <div>
@@ -47,8 +100,10 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </aside>
+            <section>
+            </section>
         </main>
     </div>
 </body>
