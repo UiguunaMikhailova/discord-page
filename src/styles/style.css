@@ -49,3 +49,14 @@ body {
     transform: translate(-50%, -50%);
     transition: all .3s;
 }
+.online:before {
+    content: "";
+    display: block;
+    background-color: #45cf71;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 5px;
+    left: 25px;
+}

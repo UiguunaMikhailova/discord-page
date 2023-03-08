@@ -3,6 +3,32 @@
     "id": 0,
     "title": "Backstreet",
     "icon": "assets/icons/backstreet.png",
+    "users": [
+      {
+        "id": 0,
+        "username": "Alexandr",
+        "avatar": "assets/icons/user.png",
+        "online": false
+      },
+      {
+        "id": 1,
+        "username": "Kristina",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      },
+      {
+        "id": 2,
+        "username": "Natalya",
+        "avatar": "assets/icons/backstreet.png",
+        "online": true
+      },
+      {
+        "id": 3,
+        "username": "Uiguuna",
+        "avatar": "assets/icons/backstreet.png",
+        "online": true
+      }
+    ],
     "groups": [
       {
         "title": "информация",
@@ -49,6 +75,38 @@
     "id": 1,
     "title": "Fntastic",
     "icon": "assets/icons/fntastic.png",
+    "users": [
+      {
+        "id": 0,
+        "username": "Andrey",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      },
+      {
+        "id": 1,
+        "username": "Nikolay",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      },
+      {
+        "id": 2,
+        "username": "Igor",
+        "avatar": "assets/icons/backstreet.png",
+        "online": true
+      },
+      {
+        "id": 3,
+        "username": "Elena",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      },
+      {
+        "id": 4,
+        "username": "Ekaterina",
+        "avatar": "assets/icons/backstreet.png",
+        "online": true
+      }
+    ],
     "groups": [
       {
         "title": "general",
@@ -78,6 +136,44 @@
     "id": 2,
     "title": "Developers",
     "icon": "assets/icons/js.png",
+    "users": [
+      {
+        "id": 0,
+        "username": "Anatoliy Ivanov",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      },
+      {
+        "id": 1,
+        "username": "Tatiana Sofronova",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      },
+      {
+        "id": 2,
+        "username": "Nadezhda",
+        "avatar": "assets/icons/backstreet.png",
+        "online": true
+      },
+      {
+        "id": 3,
+        "username": "Sayaana Ivanova",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      },
+      {
+        "id": 4,
+        "username": "Alena Lukovtseva",
+        "avatar": "assets/icons/backstreet.png",
+        "online": true
+      },
+      {
+        "id": 5,
+        "username": "Pavel Popov",
+        "avatar": "assets/icons/backstreet.png",
+        "online": false
+      }
+    ],
     "groups": [
       {
         "title": "welcome",

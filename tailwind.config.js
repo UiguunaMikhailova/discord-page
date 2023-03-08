@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./src/*.html"],
+  content: ["./src/*.{html,ts}"],
   theme: {
     extend: {
       fontFamily: {
@@ -22,6 +22,8 @@ module.exports = {
           300: "#313338",
           400: "#2B2D31",
           500: "#1E1F22",
+          600: "#434448",
+          700: "#5b5b5b",
         },
         "color-blue": "#5865F2",
         "color-lime": "#57F287",

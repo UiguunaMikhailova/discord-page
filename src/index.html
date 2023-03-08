@@ -1,82 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/icons/discord.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/discord.png"
+      type="image/x-icon"
+    />
     <title>Discord</title>
-</head>
-<body>
-    <div class="flex flex-row h-full w-full bg-color-gray-500 text-color-gray-100 font-sans text-sm font-semibold">
-        <header class="flex flex-col w-14 mt-1 ml-2 mr-2 items-center">
-            <h1 class="text-xs tracking-widest">Discord</h1>
-            <nav class="mt-2">
-                <ul class="flex flex-col items-center">
-                    <li class="mb-2 relative flex flex-col items-center cursor-pointer">
-                        <div class="bg-color-gray-400 w-12 h-12 rounded-full group hover:rounded-2xl flex justify-center">
-                           <img class="w-7" src="assets/icons/discord.svg" />
-                           <p class="hidden z-10 group-hover:flex absolute left-16 top-2 p-1 border-0 rounded-md text-sm w-40 justify-center bg-color-gray-500">Личные сообщения</p>
-                        </div>
-                        <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
-                    </li>
-                    <li class="mb-2 flex flex-col items-center">
-                        <ul class="flex flex-col gap-2" id="menu__list">
-                        </ul>
-                        <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
-                    </li>
-                    <li class="mb-2 relative flex flex-col items-center cursor-pointer">
-                        <div class="bg-color-gray-400 w-12 h-12 rounded-full group hover:rounded-2xl flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                              </svg>
-                              <p class="hidden z-10 group-hover:flex absolute left-16 top-2 p-1 border-0 rounded-md text-sm w-40 justify-center bg-color-gray-500">Добавить сервер</p>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="flex rounded-l-lg flex-row w-full mt-6 bg-color-gray-300">
-            <aside class="bg-color-gray-400 w-64 rounded-l-lg">
-                <div>
-                    <div class="relative inline-block text-left rounded-l-lg">
-                        <div>
-                          <button type="button" class="w-64 rounded-tl-lg h-12 inline-flex justify-between items-center gap-x-1.5 px-4 py-2 text-sm font-semibold shadow-xl bg-color-gray-400 hover:bg-color-gray-300" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                            <p class="text-base" id="server__title"></p>
-                            <div id="menu-icon">
-                                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                          </button>
-                        </div>
-                        <div class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                          <div class="py-1" role="none">
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
-                          </div>
-                          <div class="py-1" role="none">
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a>
-                          </div>
-                          <div class="py-1" role="none">
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a>
-                          </div>
-                          <div class="py-1" role="none">
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="container p-4 text-color-gray-200">
-                        <ul class="flex flex-col gap-3" id="canals">
-                        </ul>
-                    </div>
+  </head>
+  <body>
+    <div
+      class="flex cursor-default overflow-hidden flex-row h-full w-full bg-color-gray-500 text-color-gray-100 font-sans text-sm font-semibold"
+    >
+      <header class="flex flex-col w-14 mt-1 ml-2 mr-2 items-center">
+        <h1 class="text-xs tracking-widest">Discord</h1>
+        <nav class="mt-2">
+          <ul class="flex flex-col items-center">
+            <li class="mb-2 relative flex flex-col items-center cursor-pointer">
+              <div
+                class="bg-color-gray-400 w-12 h-12 rounded-full group hover:rounded-2xl flex justify-center"
+              >
+                <img class="w-7" src="assets/icons/discord.svg" />
+                <p
+                  class="hidden z-10 group-hover:flex absolute left-16 top-2 p-1 border-0 rounded-md text-sm w-40 justify-center bg-color-gray-500"
+                >
+                  Личные сообщения
+                </p>
+              </div>
+              <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
+            </li>
+            <li class="mb-2 flex flex-col items-center">
+              <ul class="flex flex-col gap-2" id="menu__list"></ul>
+              <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
+            </li>
+            <li class="mb-2 relative flex flex-col items-center cursor-pointer">
+              <div
+                class="bg-color-gray-400 w-12 h-12 rounded-full group hover:rounded-2xl flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30px"
+                  height="30px"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                <p
+                  class="hidden z-10 group-hover:flex absolute left-16 top-2 p-1 border-0 rounded-md text-sm w-40 justify-center bg-color-gray-500"
+                >
+                  Добавить сервер
+                </p>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="flex rounded-l-lg flex-row w-full mt-6 bg-color-gray-300">
+        <aside class="bg-color-gray-400 w-64 rounded-l-lg">
+          <div class="relative inline-block text-left rounded-l-lg">
+            <div>
+              <button
+                type="button"
+                class="w-64 rounded-tl-lg h-12 inline-flex justify-between items-center gap-x-1.5 px-4 py-2 text-sm font-semibold border-b border-b-color-gray-500 bg-color-gray-400 hover:bg-color-gray-300"
+                id="menu-button"
+                aria-expanded="true"
+                aria-haspopup="true"
+              >
+                <p class="text-base" id="server__title"></p>
+                <div id="menu-icon">
+                  <svg
+                    class="-mr-1 h-5 w-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
                 </div>
-            </aside>
-            <section>
+              </button>
+            </div>
+            <div
+              class="hidden absolute flex-col gap-2 right-0 z-10 mt-2 w-56 origin-top-right divide-y p-2 divide-color-gray-400 rounded-md mr-4 bg-color-gray-500 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              id="menu"
+            >
+              <div>
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Буст сервера</p>
+              </div>
+              <div class="pt-2">
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Пригласить людей</p>
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Настройки сервера</p>
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Создать канал</p>
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Создать категорию</p>
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Создать событие</p>
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Каталог приложений</p>
+              </div>
+              <div class="pt-2">
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Параметры уведомлений</p>
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Настройки конфиденциальности</p>
+              </div>
+              <div class="pt-2">
+                <p class="text-color-gray-200 p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Настр. профиль сервера</p>
+                <p class="text-color-red p-2 text-sm cursor-pointer rounded hover:bg-color-gray-400">Покинуть сервер</p>
+              </div>
+            </div>
+          </div>
+          <div class="container p-4 text-color-gray-200">
+            <ul class="flex flex-col gap-3" id="canals"></ul>
+          </div>
+        </aside>
+        <div class="flex w-full flex-col items-stretch">
+          <div
+          style="height: 50px;"
+            class=" px-4 py-2 border-b border-b-color-gray-500 flex items-center text-sm font-semibold bg-color-gray-400"
+          >
+            <p class="w-full flex gap-3 items-center text-base" id="canal__title">Назхвание канала</p>
+          </div>
+          <div class="flex h-full">
+            <section class="w-full flex flex-col justify-end pb-6">
+              <div></div>
+              <div class="px-3 mx-6 rounded-md h-11 flex items-center justify-between bg-color-gray-600">
+                <div
+                class="bg-color-gray-300 hover:bg-color-gray-700 cursor-pointer w-5 h-5 rounded-full group hover:rounded-2xl flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="0"
+                  height="0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+              <input id="input" type="text" placeholder="It must be 9 digits" class="bg-color-gray-600 px-2 placeholder:text-color-gray-200 placeholder:opacity-70 text-color-gray-100 focus:outline-none h-full w-full my-2" />
+              </div>
             </section>
-        </main>
+            <section class="bg-color-gray-400 w-80 flex flex-col gap-8 p-4 h-full">
+              <div id="online"></div>
+              <div id="offline"></div>
+            </section>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
