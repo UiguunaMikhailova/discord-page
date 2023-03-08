@@ -1,14 +1,143 @@
 [
   {
+    "id": 0,
     "title": "Backstreet",
-    "icon": "assets/icons/backstreet.png"
+    "icon": "assets/icons/backstreet.png",
+    "groups": [
+      {
+        "title": "информация",
+        "canals": [
+          {
+            "title": "правила чата"
+          },
+          {
+            "title": "новости"
+          },
+          {
+            "title": "информация"
+          }
+        ]
+      },
+      {
+        "title": "текстовые каналы",
+        "canals": [
+          {
+            "title": "полезные ресурсы"
+          },
+          {
+            "title": "флуд и общение"
+          },
+          {
+            "title": "обучение"
+          },
+          {
+            "title": "работа"
+          }
+        ]
+      },
+      {
+        "title": "голосовые каналы",
+        "canals": [
+          {
+            "title": "talk"
+          }
+        ]
+      }
+    ]
   },
   {
+    "id": 1,
     "title": "Fntastic",
-    "icon": "assets/icons/fntastic.png"
+    "icon": "assets/icons/fntastic.png",
+    "groups": [
+      {
+        "title": "general",
+        "canals": [
+          {
+            "title": "welcome"
+          },
+          {
+            "title": "info"
+          }
+        ]
+      },
+      {
+        "title": "text channels",
+        "canals": [
+          {
+            "title": "news"
+          },
+          {
+            "title": "chat"
+          }
+        ]
+      }
+    ]
   },
   {
+    "id": 2,
     "title": "Developers",
-    "icon": "assets/icons/js.png"
+    "icon": "assets/icons/js.png",
+    "groups": [
+      {
+        "title": "welcome",
+        "canals": [
+          {
+            "title": "rules"
+          }
+        ]
+      },
+      {
+        "title": "text channels",
+        "canals": [
+          {
+            "title": "announcments"
+          },
+          {
+            "title": "questions"
+          },
+          {
+            "title": "introductions"
+          },
+          {
+            "title": "tasks"
+          },
+          {
+            "title": "materials"
+          }
+        ]
+      },
+      {
+        "title": "random",
+        "canals": [
+          {
+            "title": "место для флуда"
+          },
+          {
+            "title": "вакансии"
+          },
+          {
+            "title": "менторинг"
+          },
+          {
+            "title": "english"
+          }
+        ]
+      },
+      {
+        "title": "голосовые каналы",
+        "canals": [
+          {
+            "title": "general"
+          },
+          {
+            "title": "live-coding"
+          },
+          {
+            "title": "рандом"
+          }
+        ]
+      }
+    ]
   }
 ]

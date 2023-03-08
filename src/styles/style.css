@@ -4,8 +4,48 @@
 
 body {
     height: 100vh;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
-/* .hover\:menu__item:hover ~ .menu__item-text {
-    opacity: 1;
-} */
+.canal--active {
+    background-color: #313338;
+    color: #F3F4F5;
+}
+.server:before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 5px;
+    height: 0;
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+.server--active:before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 5px;
+    height: 25px;
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+.server:hover:before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 5px;
+    height: 25px;
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
