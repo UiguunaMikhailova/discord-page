@@ -5,8 +5,35 @@
 body {
     height: 100vh;
     box-sizing: border-box;
+    opacity: 1;
     background-color: #1E1F22;
     overflow: hidden;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    z-index: 1001;
+}
+
+.loaded_hiding .preloader {
+  animation: load 2s;
+}
+
+@keyframes load {
+  from {
+      opacity: 1
+  } to {
+      opacity: 0
+  }
+}
+
+.loaded .preloader {
+  display: none;
 }
 
 .canal--active {
@@ -118,10 +145,6 @@ body {
 
 .arrow.rotate {
     transform: rotate(-90deg);
-}
-
-.preload * {
-    transition: none !important;
 }
 
 ::-webkit-scrollbar {

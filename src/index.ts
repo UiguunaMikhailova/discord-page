@@ -1,7 +1,6 @@
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import "./styles/style.css";
 import data from "./data.json";
+import { User, Canal, Group } from './lib/types';
 
 const menuConfigsBtn = document.getElementById("menu-button");
 const menuConfigsIcon = document.getElementById("menu-icon");
@@ -21,35 +20,6 @@ const modalOpeners = document.querySelectorAll("#modal__btn");
 const modalBox = document.getElementById("modal__box");
 const aside = document.getElementById("aside");
 
-type Message = {
-  userId: number;
-  text: string;
-  date: string;
-};
-type Canal = {
-  id: number;
-  title: string;
-  messages: Message[];
-};
-type Group = {
-  id: number;
-  title: string;
-  type: string;
-  canals: Canal[];
-};
-type Server = {
-  id: number;
-  title: string;
-  icon: string;
-  users: User[];
-  groups: Group[];
-};
-type User = {
-  id: number;
-  username: string;
-  avatar: string;
-  online: boolean;
-};
 let currServer = 2;
 let currCanal = {
   group: 2,
@@ -307,6 +277,7 @@ menuConfigsBtn?.addEventListener("click", (e) => {
   e.stopPropagation();
   toggleMenu();
 });
+
 menuConfigsItems.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -314,12 +285,14 @@ menuConfigsItems.forEach((item) => {
     openModal();
   });
 });
+
 modalOpeners.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.stopPropagation();
     openModal();
   });
 });
+
 window.addEventListener("click", (e) => {
   e.stopPropagation();
   const target = e.target as HTMLElement;
@@ -334,19 +307,27 @@ window.addEventListener("click", (e) => {
     modal.classList.remove("active");
   }
 });
+
 modalBox?.addEventListener("click", (e) => e.stopPropagation());
 modalBtn?.addEventListener("click", (e) => {
   e.stopPropagation();
   modal?.classList.remove("active");
 });
+
 aside?.addEventListener("click", (e) => {
   e.stopPropagation();
 });
+
 input?.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     (input as HTMLInputElement).value = "";
   }
 });
-window.addEventListener("load", () =>
-  document.body.classList.remove("preload")
-);
+
+window.onload = function (): void {
+  document.body.classList.add("loaded_hiding");
+  window.setTimeout(function () {
+    document.body.classList.add("loaded");
+    document.body.classList.remove("loaded_hiding");
+  }, 2000);
+};
