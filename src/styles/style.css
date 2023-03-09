@@ -5,6 +5,12 @@
 body {
     height: 100vh;
     box-sizing: border-box;
+    background-color: #1E1F22;
+    overflow: hidden;
+}
+
+.preload * {
+    transition: none !important;
 }
 
 .canal--active {
@@ -85,6 +91,17 @@ body {
 .server__icon:hover .server__text {
     opacity: 1;
     visibility: visible;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 ::-webkit-scrollbar {
