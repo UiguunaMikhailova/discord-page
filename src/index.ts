@@ -6,6 +6,7 @@ import data from "./data.json";
 const menuConfigsBtn = document.getElementById("menu-button");
 const menuConfigsIcon = document.getElementById("menu-icon") as HTMLElement;
 const menuConfigs = document.getElementById("menu");
+const menuConfigsItems = document.querySelectorAll("#menu__item");
 const serverList = document.getElementById("server__list") as HTMLElement;
 const canals = document.getElementById("canals") as HTMLElement;
 const serverTitle = document.getElementById("server__title") as HTMLElement;
@@ -74,9 +75,9 @@ function renderServer(icon: string, title: string, index: number): void {
     currServer = index;
     showPage();
   });
-  serverElement.innerHTML = `<div class="bg-color-gray-400 overflow-hidden w-12 h-12 rounded-full group hover:rounded-2xl flex justify-center">
-    <img class="object-contain rounded-full group-hover:rounded-2xl" src="${icon}" />
-    <div class="hidden z-10 group-hover:flex absolute left-16 top-2 px-3 py-1 rounded-md text-sm justify-center bg-color-gray-500">${title}</div></div>`;
+  serverElement.innerHTML = `<div class="bg-color-gray-400 overflow-hidden w-12 h-12 server__icon flex justify-center">
+    <img class="object-contain" src="${icon}" />
+    <div class="server__text z-10 absolute left-16 top-2 px-3 py-1 rounded-md text-sm justify-center bg-color-gray-500">${title}</div></div>`;
   serverList?.append(serverElement);
   renderGroups(data[currServer].groups, data[currServer].title);
   const onlineUsers = data[currServer].users.filter((x) => x.online);
@@ -123,6 +124,16 @@ function renderGroups(groups: Group[], title: string): void {
   groups.forEach((group, index) => {
     const groupIndex = index;
     const groupElement = document.createElement("li");
+    groupElement.addEventListener('click', (e) => {
+      const elem = (e.target as HTMLElement).children[0]
+      if (elem.classList.contains('-rotate-90')) {
+        elem.classList.remove('-rotate-90')
+        renderCanals(group.canals, groupIndex, canalList, group.type, true);
+      } else {
+        elem.classList.add('-rotate-90')
+        renderCanals(group.canals, groupIndex, canalList, group.type, false);
+      }
+    })
     groupElement.innerHTML = `<p class="text-xs mb-2 hover:text-color-gray-100 cursor-pointer flex items-center gap-1">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="0" height="0" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -132,7 +143,7 @@ function renderGroups(groups: Group[], title: string): void {
     const canalList = document.createElement("ul");
     canalList.className = "flex flex-col gap-1";
     groupElement.appendChild(canalList);
-    renderCanals(group.canals, groupIndex, canalList, group.type);
+    renderCanals(group.canals, groupIndex, canalList, group.type, true);
     canals?.append(groupElement);
   });
 }
@@ -141,11 +152,20 @@ function renderCanals(
   canals: Canal[],
   groupIndex: number,
   canalList: HTMLElement,
-  groupType: string
+  groupType: string,
+  isVisible: boolean
 ): void {
-  canals.forEach((canal, index) => {
+  canalList.innerHTML = ''
+  if (isVisible) {
+    canals.forEach((canal, index) => {
     createCanals(canal, canalList, index, groupIndex, groupType);
   });
+  } else {
+    const canal = canals.find((canal, index) => currCanal.canal === index && currCanal.group === groupIndex)
+    if (canal) {
+      createCanals(canal, canalList, currCanal.canal, groupIndex, groupType);
+    }
+  }
 }
 
 function createCanals(
@@ -162,6 +182,7 @@ function createCanals(
       group: groupIndex,
     };
     renderGroups(data[currServer].groups, data[currServer].title);
+    renderCanal();
   });
   const classes = `rounded hover:bg-color-gray-300 hover:text-color-gray-100 p-2 flex cursor-pointer items-center gap-2 ${
     currCanal.canal === index && currCanal.group === groupIndex
@@ -189,6 +210,9 @@ function createCanals(
 }
 
 function renderCanal(): void {
+  while (messages.firstChild) {
+    messages.removeChild(messages.firstChild);
+  }
   const server = data.find((server) => server.id === currServer);
   const group = server?.groups.find((group) => group.id === currCanal.group);
   const canal = group?.canals.find((canal) => canal.id === currCanal.canal);
@@ -200,13 +224,20 @@ function renderCanal(): void {
     messageElement.className = 'flex hover:bg-color-gray-400 px-4 py-2'
     messageElement.innerHTML = `<img class="w-10 h-10 mr-4" src="${user?.avatar}"/>
     <div>
-      <p class="mr-2">${user?.username}<span class="text-xs ml-3 text-color-gray-200">${message.date}</span></p>
-      <p>${message.text}</p>
+      <p class="mr-2">${user?.username}<span class="text-xs ml-3 font-light text-color-gray-200">${message.date}</span></p>
+      <p class="text-sm font-normal">${message.text}</p>
     </div>`
     messageList.appendChild(messageElement)
   })
+  if (!canal?.messages.length) {
+    const messageElement = document.createElement('div')
+    messageElement.className = 'flex flex-col justify-center items-center gap-5 mb-5'
+    messageElement.innerHTML = `
+      <p class="text-2xl text-center">Добро пожаловать на сервер</p>
+      <p class="">Это начало истории этого канала.</p>`
+    messageList.appendChild(messageElement)
+  }
   messages.appendChild(messageList);
-  console.log(canal)
 }
 
 menuConfigsBtn?.addEventListener("click", () => {
@@ -225,3 +256,12 @@ menuConfigsBtn?.addEventListener("click", () => {
     </svg>`;
   }
 });
+menuConfigsItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    menuConfigs?.classList.add("hidden");
+    menuConfigs?.classList.remove("flex");
+    menuConfigsIcon.innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+    </svg>`;
+  })
+})
