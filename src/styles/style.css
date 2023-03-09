@@ -9,10 +9,6 @@ body {
     overflow: hidden;
 }
 
-.preload * {
-    transition: none !important;
-}
-
 .canal--active {
     background-color: #313338;
     color: #F3F4F5;
@@ -29,7 +25,7 @@ body {
     top: 50%;
     left: -20%;
     transform: translate(-50%, -50%);
-    transition: all .3s;
+    transition: all .4s;
 }
 
 .server--active:before {
@@ -43,7 +39,7 @@ body {
     top: 50%;
     left: -20%;
     transform: translate(-50%, -50%);
-    transition: all .3s;
+    transition: all .4s;
 }
 
 .server:hover:before {
@@ -57,7 +53,7 @@ body {
     top: 50%;
     left: -20%;
     transform: translate(-50%, -50%);
-    transition: all .3s;
+    transition: all .4s;
 }
 
 .online:before {
@@ -74,14 +70,14 @@ body {
 
 .server__icon {
     border-radius: 100%;
-    transition: all .3s;
+    transition: all .4s;
 }
 
 .server__text {
     display: flex;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s;
+    transition: all .4s;
 }
 
 .server__icon:hover {
@@ -96,12 +92,36 @@ body {
 .modal {
     visibility: hidden;
     opacity: 0;
-    transition: all .5s;
+    transition: all .4s;
 }
 
 .modal.active {
     visibility: visible;
     opacity: 1;
+}
+
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.menu.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.arrow {
+    transform: rotate(0);
+    transition: all .4s;
+}
+
+.arrow.rotate {
+    transform: rotate(-90deg);
+}
+
+.preload * {
+    transition: none !important;
 }
 
 ::-webkit-scrollbar {

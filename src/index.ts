@@ -19,6 +19,7 @@ const modal = document.getElementById("modal");
 const modalBtn = document.getElementById("modal__close");
 const modalOpeners = document.querySelectorAll("#modal__btn");
 const modalBox = document.getElementById("modal__box");
+const aside = document.getElementById("aside");
 
 type Message = {
   userId: number;
@@ -137,7 +138,7 @@ function renderGroups(groups: Group[], title: string): void {
     const groupIndex = index;
     const groupElement = document.createElement("li");
     groupElement.innerHTML = `<p class="text-xs mb-2 hover:text-color-gray-100 cursor-pointer flex items-center gap-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="0" height="0" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+    <svg id="arrow" xmlns="http://www.w3.org/2000/svg" fill="none" width="0" height="0" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 arrow">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
       </svg>
     ${group.title.toUpperCase()}
@@ -145,6 +146,7 @@ function renderGroups(groups: Group[], title: string): void {
     groupElement.addEventListener("click", (e) => {
       let elem;
       const t = e.target as HTMLElement;
+      console.log(t);
       if (t.nodeName === "svg") {
         elem = t;
       } else if (t.nodeName === "path") {
@@ -152,12 +154,20 @@ function renderGroups(groups: Group[], title: string): void {
       } else {
         elem = t.children[0];
       }
-      if (elem?.classList.contains("-rotate-90")) {
-        elem?.classList.remove("-rotate-90");
-        renderCanals(group.canals, groupIndex, canalList, group.type, true);
-      } else {
-        elem?.classList.add("-rotate-90");
-        renderCanals(group.canals, groupIndex, canalList, group.type, false);
+      if (elem?.nodeName === "svg") {
+        if (elem.classList.contains("rotate")) {
+          elem.classList.remove("rotate");
+          renderCanals(group.canals, groupIndex, canalList, group.type, true);
+        } else {
+          elem.classList.add("rotate");
+          renderCanals(
+            group.canals,
+            groupIndex,
+            canalList,
+            group.type,
+            false
+          );
+        }
       }
     });
     const canalList = document.createElement("ul");
@@ -271,23 +281,21 @@ function renderCanal(): void {
 }
 
 function toggleMenu(): void {
-  if (menuConfigs?.classList.contains("hidden")) {
-    menuConfigs?.classList.remove("hidden");
-    menuConfigs?.classList.add("flex");
+  if (menuConfigs?.classList.contains("open")) {
+    menuConfigs?.classList.remove("open");
+    (
+      menuConfigsIcon as HTMLElement
+    ).innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+</svg>
+  `;
+  } else {
+    menuConfigs?.classList.add("open");
     (
       menuConfigsIcon as HTMLElement
     ).innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-  </svg>
-  `;
-  } else {
-    menuConfigs?.classList.add("hidden");
-    menuConfigs?.classList.remove("flex");
-    (
-      menuConfigsIcon as HTMLElement
-    ).innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-    </svg>`;
+  </svg>`;
   }
 }
 
@@ -316,7 +324,7 @@ window.addEventListener("click", (e) => {
   e.stopPropagation();
   const target = e.target as HTMLElement;
   if (
-    menuConfigs?.classList.contains("flex") &&
+    menuConfigs?.classList.contains("open") &&
     target !== menuConfigsBtn &&
     target !== menuConfigsIcon
   ) {
@@ -331,11 +339,14 @@ modalBtn?.addEventListener("click", (e) => {
   e.stopPropagation();
   modal?.classList.remove("active");
 });
-input?.addEventListener('keyup', (e) => {
-  if (e.key === 'Enter') {
-    (input as HTMLInputElement).value = ''
+aside?.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+input?.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    (input as HTMLInputElement).value = "";
   }
-})
+});
 window.addEventListener("load", () =>
   document.body.classList.remove("preload")
 );
