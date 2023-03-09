@@ -34,13 +34,59 @@
         "title": "информация",
         "canals": [
           {
-            "title": "правила чата"
+            "title": "правила чата",
+            "messages": [
+              {
+                "userId": 0,
+                "text": "Всем привет! Надеюсь всем удобно в дискорд) Сейчас накидаю небольшой список правил, чтобы все было в рамках нормы)",
+                "date": "14.12.2022 17:02"
+              },
+              {
+                "userId": 0,
+                "text": "Ввиду того, что мы не знакомы, предлагаю пока что воздержаться от мата. А так же прошу не поднимать темы связанные с: ПОЛИТИКА, ВЕРОИСПОВЕДАНИЕ, НАЦИОНАЛЬНОСТЬ, ГЕНДЕР, СЕКСУАЛЬНАЯ ОРИЕНТАЦИЯ и прочие темы, которые могут раздуть конфликт.",
+                "date": "14.12.2022 17:12"
+              }
+            ]
           },
           {
-            "title": "новости"
+            "title": "новости",
+            "messages": [
+              {
+                "userId": 0,
+                "text": "Всем привет! Надеюсь всем удобно в дискорд) Сейчас накидаю небольшой список правил, чтобы все было в рамках нормы)",
+                "date": "14.12.2022 17:02"
+              },
+              {
+                "userId": 0,
+                "text": "Ввиду того, что мы не знакомы, предлагаю пока что воздержаться от мата. А так же прошу не поднимать темы связанные с: ПОЛИТИКА, ВЕРОИСПОВЕДАНИЕ, НАЦИОНАЛЬНОСТЬ, ГЕНДЕР, СЕКСУАЛЬНАЯ ОРИЕНТАЦИЯ и прочие темы, которые могут раздуть конфликт.",
+                "date": "14.12.2022 17:12"
+              }
+            ]
           },
           {
-            "title": "информация"
+            "title": "информация",
+            "messages": [
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "18.12.2022 11:09"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 12:18"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "19.12.2022 13:09"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 16:18"
+              }
+            ]
           }
         ]
       },
@@ -48,16 +94,284 @@
         "title": "текстовые каналы",
         "canals": [
           {
-            "title": "полезные ресурсы"
+            "title": "полезные ресурсы",
+            "messages": [
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "18.12.2022 11:09"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 12:18"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "19.12.2022 13:09"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 16:18"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "20.12.2022 01:09"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "20.12.2022 02:09"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "28.12.2022 15:39"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "28.12.2022 19:09"
+              }
+            ]
           },
           {
-            "title": "флуд и общение"
+            "title": "флуд и общение",
+            "messages": [
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "18.12.2022 11:09"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 12:18"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "19.12.2022 13:09"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 16:18"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "20.12.2022 01:09"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "20.12.2022 02:09"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "28.12.2022 15:39"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "28.12.2022 19:09"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "15.01.2023 11:09"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "28.01.2023 03:10"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:44"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "03.02.2023 10:48"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 09:24"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "06.02.2023 10:04"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "09.02.2023 19:37"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "09.02.2023 19:45"
+              }
+            ]
           },
           {
-            "title": "обучение"
+            "title": "обучение",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "28.01.2023 03:10"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:44"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "03.02.2023 10:48"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 09:24"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "06.02.2023 10:04"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "09.02.2023 19:37"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "09.02.2023 19:45"
+              }
+            ]
           },
           {
-            "title": "работа"
+            "title": "работа",
+            "messages": [
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "01.03.2023 16:18"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "02.03.2023 17:18"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "03.03.2023 18:18"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "04.03.2023 19:18"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "05.03.2023 20:18"
+              }
+            ]
           }
         ]
       },
@@ -112,10 +426,59 @@
         "title": "general",
         "canals": [
           {
-            "title": "welcome"
+            "title": "welcome",
+            "messages": [
+              {
+                "userId": 4,
+                "text": "Volunteering - Essentially, the word volunteer comes from the Latin word voluntarius, meaning willing or of one's own choice.  Whatever you do in your life, you have only two choices: do it willingly or unwillingly. If you help a stranger carry heavy boxes into their house willingly, you enjoy it. If you carry those heavy boxes unwillingly, every moment will be like torture. Volunteering means that you bring certain pleasantness to every action you take.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 3,
+                "text": "As a Fntastic employee, your work is not just a daily grind but an opportunity to engage in personal and professional growth while you contribute your time and energy to work on fantastic projects that make people happier.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 0,
+                "text": "Volunteering - Essentially, the word volunteer comes from the Latin word voluntarius, meaning willing or of one's own choice.  Whatever you do in your life, you have only two choices: do it willingly or unwillingly. If you help a stranger carry heavy boxes into their house willingly, you enjoy it. If you carry those heavy boxes unwillingly, every moment will be like torture. Volunteering means that you bring certain pleasantness to every action you take.",
+                "date": "26.02.2023 16:14"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.03.2023 10:54"
+              },
+              {
+                "userId": 2,
+                "text": "There are no positions available at the moment. However, you can submit your resume. If there is a role that might be a good match, a Fntastic recruiter will contact you.",
+                "date": "06.04.2023 16:40"
+              }
+            ]
           },
           {
-            "title": "info"
+            "title": "info",
+            "messages": [
+              {
+                "userId": 4,
+                "text": "Continent - The ultimate app for remote work.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              }
+            ]
           }
         ]
       },
@@ -123,10 +486,129 @@
         "title": "text channels",
         "canals": [
           {
-            "title": "news"
+            "title": "news",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "We help people and the planet with the resources we have.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 0,
+                "text": "Our fundamental vision is to deliver happiness 🎉 to people and from this vision stem many products 🎮 and projects, all towards the same aim.",
+                "date": "28.01.2023 03:10"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 0,
+                "text": "One of the most anticipated games in the world.",
+                "date": "06.02.2023 09:24"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 0,
+                "text": "Propnight - The top-selling game on Steam.",
+                "date": "09.02.2023 19:37"
+              }
+            ]
           },
           {
-            "title": "chat"
+            "title": "chat",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "We are creating one of the most anticipated games in the world.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "We are on the way to give people freedom from offices.",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 1,
+                "text": "We are building a fantastic organization based on a culture of volunteering.",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 4,
+                "text": "We are volunteers! We dedicated our lives to a process of just giving.",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "28.01.2023 03:10"
+              },
+              {
+                "userId": 1,
+                "text": "Our fundamental vision is to deliver happiness to people. From this vision stem many products and projects, all towards the same aim.",
+                "date": "03.02.2023 10:44"
+              },
+              {
+                "userId": 2,
+                "text": "Our culture is based on the idea of volunteering.",
+                "date": "03.02.2023 10:48"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 09:24"
+              },
+              {
+                "userId": 4,
+                "text": "Fntastic is an all-remote organization",
+                "date": "06.02.2023 10:04"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "09.02.2023 19:37"
+              },
+              {
+                "userId": 1,
+                "text": "The story of Fntastic began in the coldest city in the world, Yakutsk, with the Gotovtsev brothers' dream of creating a global organization that would impact people's lives. In 2015, they rented a small room and started working on their first Kickstarter-funded game. Thus began the journey to the dream.",
+                "date": "09.02.2023 19:45"
+              }
+            ]
           }
         ]
       }
@@ -179,7 +661,84 @@
         "title": "welcome",
         "canals": [
           {
-            "title": "rules"
+            "title": "rules",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source text and can be retrieved through toString()).",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 5,
+                "text": "This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about APIs that are specific to Web pages, please see Web APIs and DOM.",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 4,
+                "text": "The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402). As soon as one browser implements a feature, we try to document it. This means that cases where some proposals for new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may use some of those new features. Most of the time, this happens between the stages 3 and 4, and is usually before the spec is officially published.",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 3,
+                "text": "Do not confuse JavaScript with the Java programming language — JavaScript is not Interpreted Java. Both Java and JavaScript are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and use.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 5,
+                "text": "JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 0,
+                "text": "JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich.",
+                "date": "28.01.2023 03:10"
+              },
+              {
+                "userId": 1,
+                "text": "JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!",
+                "date": "03.02.2023 10:44"
+              },
+              {
+                "userId": 5,
+                "text": "JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. ",
+                "date": "03.02.2023 10:48"
+              },
+              {
+                "userId": 4,
+                "text": "JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 09:24"
+              },
+              {
+                "userId": 5,
+                "text": "The reason the instructions (above) place the <script> element near the bottom of the HTML file is that the browser reads code in the order it appears in the file.",
+                "date": "06.02.2023 10:04"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 5,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "09.02.2023 19:37"
+              },
+              {
+                "userId": 1,
+                "text": "If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. To learn more about alternative approaches, see Script loading strategies.",
+                "date": "09.02.2023 19:45"
+              }
+            ]
           }
         ]
       },
@@ -187,19 +746,208 @@
         "title": "text channels",
         "canals": [
           {
-            "title": "announcments"
+            "title": "announcements",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, aspernatur alias? Magni sunt maxime atque quidem corporis, asperiores eius velit iste blanditiis, error distinctio repudiandae possimus? Eaque ut commodi autem! Laborum explicabo necessitatibus quos quia quasi hic, eaque et reprehenderit pariatur atque quod exercitationem omnis cupiditate totam quis illum quam fuga accusantium, earum aut blanditiis aliquam possimus non. Ea, a.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "Debitis, dolorum. Illo ipsam id, vel esse necessitatibus dolore neque quidem laudantium exercitationem placeat omnis, molestiae amet rem, numquam ullam. Consectetur numquam animi delectus laboriosam voluptatum iste, accusamus repellendus fugiat.",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 5,
+                "text": "Tempora, consectetur maiores dolorum cum ea harum, nihil placeat labore iure quo voluptate tempore provident excepturi? Deleniti vitae rerum facilis, soluta, ducimus dignissimos labore doloremque architecto laborum nemo quae expedita!",
+                "date": "21.01.2023 16:10"
+              }
+            ]
           },
           {
-            "title": "questions"
+            "title": "questions",
+            "messages": [
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "18.12.2022 11:09"
+              },
+              {
+                "userId": 5,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 12:18"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "19.12.2022 13:09"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 16:18"
+              }
+            ]
           },
           {
-            "title": "introductions"
+            "title": "introductions",
+            "messages": []
           },
           {
-            "title": "tasks"
+            "title": "tasks",
+            "messages": [
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "18.12.2022 11:09"
+              },
+              {
+                "userId": 5,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 12:18"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "19.12.2022 13:09"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "19.12.2022 16:18"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "20.12.2022 01:09"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "20.12.2022 02:09"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "28.12.2022 15:39"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "28.12.2022 19:09"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "15.01.2023 11:09"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 5,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "28.01.2023 03:10"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:44"
+              },
+              {
+                "userId": 5,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "03.02.2023 10:48"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 09:24"
+              },
+              {
+                "userId": 4,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "06.02.2023 10:04"
+              },
+              {
+                "userId": 5,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 2,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "09.02.2023 19:37"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "09.02.2023 19:45"
+              }
+            ]
           },
           {
-            "title": "materials"
+            "title": "materials",
+            "messages": [
+              {
+                "userId": 4,
+                "text": "https://youtu.be/zDlg64fsQow",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "Нормальное объяснение @use, @forward в сравнении с @import в sass, в доке не очень понятно было, после этого видео разобрался https://www.youtube.com/watch?v=CR-a8upNjJ0&t=626s&ab_channel=KevinPowell",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 2,
+                "text": "https://habr.com/ru/company/dododev/blog/714512/  Сказ о том, как правильно обзываться, чтобы все всё всегда понимали. Рекомендуется к прочитыванию, сохранению в закладки и периодическому перечитыванию.",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 1,
+                "text": "Javascript: базовые вопросы и понятия для самых маленьких https://habr.com/ru/company/lanit/blog/718130/",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 0,
+                "text": "Подробные диаграммы по командам git, не знаю как раньше мимо такого прошел https://marklodato.github.io/visual-git-guide/index-en.html#detached",
+                "date": "26.01.2023 14:14"
+              }
+            ]
           }
         ]
       },
@@ -207,16 +955,149 @@
         "title": "random",
         "canals": [
           {
-            "title": "место для флуда"
+            "title": "место для флуда",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source text and can be retrieved through toString()).",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 5,
+                "text": "This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about APIs that are specific to Web pages, please see Web APIs and DOM.",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 4,
+                "text": "The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402). As soon as one browser implements a feature, we try to document it. This means that cases where some proposals for new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may use some of those new features. Most of the time, this happens between the stages 3 and 4, and is usually before the spec is officially published.",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 3,
+                "text": "Do not confuse JavaScript with the Java programming language — JavaScript is not Interpreted Java. Both Java and JavaScript are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and use.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 5,
+                "text": "JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.",
+                "date": "26.01.2023 16:14"
+              },
+              {
+                "userId": 0,
+                "text": "JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich.",
+                "date": "28.01.2023 03:10"
+              },
+              {
+                "userId": 1,
+                "text": "JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!",
+                "date": "03.02.2023 10:44"
+              },
+              {
+                "userId": 5,
+                "text": "JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. ",
+                "date": "03.02.2023 10:48"
+              },
+              {
+                "userId": 4,
+                "text": "JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.",
+                "date": "03.02.2023 10:54"
+              },
+              {
+                "userId": 0,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 09:24"
+              },
+              {
+                "userId": 5,
+                "text": "The reason the instructions (above) place the <script> element near the bottom of the HTML file is that the browser reads code in the order it appears in the file.",
+                "date": "06.02.2023 10:04"
+              },
+              {
+                "userId": 3,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "date": "06.02.2023 16:40"
+              },
+              {
+                "userId": 5,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati in sit dignissimos. Corporis, assumenda! Omnis maxime, et labore adipisci quasi repellendus, aperiam non quaerat voluptatem pariatur neque nostrum incidunt! Minima fugiat officiis, pariatur error similique molestiae facere, nam saepe nesciunt totam ducimus consequuntur obcaecati dolorum harum nostrum blanditiis. Temporibus tempore repudiandae quia, dolorum doloremque assumenda. Est qui quibusdam asperiores.",
+                "date": "09.02.2023 19:37"
+              },
+              {
+                "userId": 1,
+                "text": "If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. To learn more about alternative approaches, see Script loading strategies.",
+                "date": "09.02.2023 19:45"
+              }
+            ]
           },
           {
-            "title": "вакансии"
+            "title": "вакансии",
+            "messages": [
+              {
+                "userId": 0,
+                "text": "Ищем фронтенд-разработчика в стартап, писать в личку",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "Ребята, мб кому-нибудь интересно поработать в команде на проекте с кросс-ревью и менторингом, сейчас ищем одного разработчика на создание cms, второго на дописывание конструктора штор. По технологиям: Next.js, React, Typescript, SCSS, Material UI, Formik. На cms будем скорее всего использовать React Query и покрывать тестами  cypress. Работаем по scrum-kanban методологии. От вас: React, Typescript (во все остальное можно быстро вкатится), желание развиваться и познавать новые технологии на реальном проекте и где-то 3-4 часа свободного времени в день. От команды: опыт работы, работа по гибким методологиям в команде, код ревью. Пишите в тг личку",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 1,
+                "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero error a ea aut natus, explicabo rem vero quia adipisci tempora magni deleniti recusandae incidunt sapiente veniam ratione nesciunt maiores nihil?",
+                "date": "21.01.2023 16:10"
+              }
+            ]
           },
           {
-            "title": "менторинг"
+            "title": "менторинг",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "Пишите в личку)",
+                "date": "15.01.2023 19:19"
+              }
+            ]
           },
           {
-            "title": "english"
+            "title": "english",
+            "messages": [
+              {
+                "userId": 2,
+                "text": "Англи́йский язык (самоназвание — English, the English language) — язык англо-фризской подгруппы западной группы германской ветви индоевропейской языковой семьи.",
+                "date": "15.01.2023 19:19"
+              },
+              {
+                "userId": 3,
+                "text": "Английский язык — важнейший международный язык[5], что является следствием колониальной политики Британской империи в XIX и первой половине XX века, а также мирового влияния Соединённых Штатов Америки в XX—XXI веках[6]. Является одним из наиболее распространённых языков в мире. Существует значительное разнообразие диалектов и говоров английского языка.",
+                "date": "16.01.2023 16:10"
+              },
+              {
+                "userId": 5,
+                "text": "Английский язык возник в раннем Средневековье как потомок англосаксонского языка, на котором говорили англосаксы. Он стал родным для большинства населения Великобритании, а с территориальным ростом Британской империи распространился в Азию, Африку, Северную Америку и Австралию. После обретения независимости британскими колониями английский язык остался либо родным языком большей части населения (США, Канада, Австралия, Новая Зеландия), либо одним из официальных языков (Индия, Нигерия).",
+                "date": "21.01.2023 16:10"
+              },
+              {
+                "userId": 4,
+                "text": "Английский язык изучают в образовательных учреждениях многих стран как иностранный.",
+                "date": "22.01.2023 06:23"
+              },
+              {
+                "userId": 1,
+                "text": "Английский язык — родной для около 335 млн человек (2003 год), третий родной язык в мире после китайского и испанского[8][9], людей, говорящих на нём (включая тех, для кого он является вторым языком), — свыше 1,3 млрд человек (2007). Один из шести официальных и рабочих языков ООН.",
+                "date": "26.01.2023 14:14"
+              },
+              {
+                "userId": 5,
+                "text": "Английский язык является официальным в 54[10] странах — Великобритании[11], США (официальный язык тридцати одного штата), Австралии, один из официальных языков Ирландии (наряду с ирландским), Канады (наряду с французским) и Мальты (вместе с мальтийским), Новой Зеландии (наряду с маори и жестовым).",
+                "date": "26.01.2023 16:14"
+              }
+            ]
           }
         ]
       },
