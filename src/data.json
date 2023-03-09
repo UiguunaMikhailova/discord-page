@@ -31,9 +31,12 @@
     ],
     "groups": [
       {
+        "id": 0,
         "title": "информация",
+        "type": "text",
         "canals": [
           {
+            "id": 0,
             "title": "правила чата",
             "messages": [
               {
@@ -49,6 +52,7 @@
             ]
           },
           {
+            "id": 1,
             "title": "новости",
             "messages": [
               {
@@ -64,6 +68,7 @@
             ]
           },
           {
+            "id": 2,
             "title": "информация",
             "messages": [
               {
@@ -91,9 +96,12 @@
         ]
       },
       {
+        "id": 1,
         "title": "текстовые каналы",
+        "type": "text",
         "canals": [
           {
+            "id": 0,
             "title": "полезные ресурсы",
             "messages": [
               {
@@ -139,6 +147,7 @@
             ]
           },
           {
+            "id": 1,
             "title": "флуд и общение",
             "messages": [
               {
@@ -264,6 +273,7 @@
             ]
           },
           {
+            "id": 2,
             "title": "обучение",
             "messages": [
               {
@@ -344,6 +354,7 @@
             ]
           },
           {
+            "id": 3,
             "title": "работа",
             "messages": [
               {
@@ -376,10 +387,14 @@
         ]
       },
       {
+        "id": 2,
         "title": "голосовые каналы",
+        "type": "voice",
         "canals": [
           {
-            "title": "talk"
+            "id": 0,
+            "title": "talk",
+            "messages": []
           }
         ]
       }
@@ -423,9 +438,12 @@
     ],
     "groups": [
       {
+        "id": 0,
         "title": "general",
+        "type": "text",
         "canals": [
           {
+            "id": 0,
             "title": "welcome",
             "messages": [
               {
@@ -461,6 +479,7 @@
             ]
           },
           {
+            "id": 1,
             "title": "info",
             "messages": [
               {
@@ -483,9 +502,12 @@
         ]
       },
       {
+        "id": 1,
         "title": "text channels",
+        "type": "text",
         "canals": [
           {
+            "id": 0,
             "title": "news",
             "messages": [
               {
@@ -531,6 +553,7 @@
             ]
           },
           {
+            "id": 1,
             "title": "chat",
             "messages": [
               {
@@ -658,9 +681,12 @@
     ],
     "groups": [
       {
+        "id": 0,
         "title": "welcome",
+        "type": "text",
         "canals": [
           {
+            "id": 0,
             "title": "rules",
             "messages": [
               {
@@ -743,9 +769,12 @@
         ]
       },
       {
+        "id": 1,
         "title": "text channels",
+        "type": "text",
         "canals": [
           {
+            "id": 0,
             "title": "announcements",
             "messages": [
               {
@@ -766,6 +795,7 @@
             ]
           },
           {
+            "id": 1,
             "title": "questions",
             "messages": [
               {
@@ -791,10 +821,12 @@
             ]
           },
           {
+            "id": 2,
             "title": "introductions",
             "messages": []
           },
           {
+            "id": 3,
             "title": "tasks",
             "messages": [
               {
@@ -920,6 +952,7 @@
             ]
           },
           {
+            "id": 4,
             "title": "materials",
             "messages": [
               {
@@ -952,9 +985,12 @@
         ]
       },
       {
+        "id": 2,
         "title": "random",
+        "type": "text",
         "canals": [
           {
+            "id": 0,
             "title": "место для флуда",
             "messages": [
               {
@@ -1035,6 +1071,7 @@
             ]
           },
           {
+            "id": 1,
             "title": "вакансии",
             "messages": [
               {
@@ -1055,6 +1092,7 @@
             ]
           },
           {
+            "id": 2,
             "title": "менторинг",
             "messages": [
               {
@@ -1065,6 +1103,7 @@
             ]
           },
           {
+            "id": 3,
             "title": "english",
             "messages": [
               {
@@ -1102,16 +1141,24 @@
         ]
       },
       {
+        "id": 3,
         "title": "голосовые каналы",
+        "type": "voice",
         "canals": [
           {
-            "title": "general"
+            "id": 0,
+            "title": "general",
+            "messages": []
           },
           {
-            "title": "live-coding"
+            "id": 1,
+            "title": "live-coding",
+            "messages": []
           },
           {
-            "title": "рандом"
+            "id": 2,
+            "title": "рандом",
+            "messages": []
           }
         ]
       }

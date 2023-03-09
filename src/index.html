@@ -13,7 +13,7 @@
   </head>
   <body>
     <div
-      class="flex cursor-default overflow-hidden flex-row h-full w-full bg-color-gray-500 text-color-gray-100 font-sans text-sm font-semibold"
+      class="flex cursor-default flex-row h-full w-full bg-color-gray-500 text-color-gray-100 font-sans text-sm font-semibold"
     >
       <header class="flex flex-col w-14 mt-1 ml-2 mr-2 items-center">
         <h1 class="text-xs tracking-widest">Discord</h1>
@@ -33,7 +33,7 @@
               <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
             </li>
             <li class="mb-2 flex flex-col items-center">
-              <ul class="flex flex-col gap-2" id="menu__list"></ul>
+              <ul class="flex flex-col gap-2" id="server__list"></ul>
               <div class="w-7 h-0.5 mt-2 bg-color-gray-300"></div>
             </li>
             <li class="mb-2 relative flex flex-col items-center cursor-pointer">
@@ -130,9 +130,26 @@
           >
             <p class="w-full flex gap-3 items-center text-base" id="canal__title">Назхвание канала</p>
           </div>
-          <div class="flex h-full">
-            <section class="w-full flex flex-col justify-end pb-6">
-              <div></div>
+          <div class="flex">
+            <section class="w-full flex flex-col h-[calc(100vh-72px)] overflow-hidden justify-end pb-6">
+              <div id="messages" class="overflow-hidden">
+                <!-- <ul class="flex flex-col gap-3 my-3">
+                  <li class="flex hover:bg-color-gray-400 px-4 py-2">
+                    <img class="w-10 h-10 mr-4" src="assets/icons/astronaut.png"/>
+                    <div>
+                      <p>Uiguuna<span class="text-xs ml-3 text-color-gray-200">02.03.2022 16:02</span></p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum totam dicta? Vero nemo nobis cupiditate aut sit, consectetur ab ex nihil. Porro quas eos beatae quaerat dicta consectetur reiciendis.</p>
+                    </div>
+                  </li>
+                  <li class="flex hover:bg-color-gray-400 px-4 py-2">
+                    <img class="w-10 h-10 mr-4" src="assets/icons/astronaut.png"/>
+                    <div>
+                      <p class="mr-2">Uiguuna<span class="text-xs ml-3 text-color-gray-200">02.03.2022 16:02</span></p>
+                      <a class="text-sky-600" href="https://open.spotify.com/">https://open.spotify.com/</a>
+                    </div>
+                  </li>
+                </ul> -->
+              </div>
               <div class="px-3 mx-6 rounded-md h-11 flex items-center justify-between bg-color-gray-600">
                 <div
                 class="bg-color-gray-300 hover:bg-color-gray-700 cursor-pointer w-5 h-5 rounded-full group hover:rounded-2xl flex justify-center items-center"
@@ -157,7 +174,7 @@
               <input id="input" type="text" placeholder="It must be 9 digits" class="bg-color-gray-600 px-2 placeholder:text-color-gray-200 placeholder:opacity-70 text-color-gray-100 focus:outline-none h-full w-full my-2" />
               </div>
             </section>
-            <section class="bg-color-gray-400 w-80 flex flex-col gap-8 p-4 h-full">
+            <section class="bg-color-gray-400 w-80 flex flex-col gap-8 p-4">
               <div id="online"></div>
               <div id="offline"></div>
             </section>
