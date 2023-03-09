@@ -6,10 +6,12 @@ body {
     height: 100vh;
     box-sizing: border-box;
 }
+
 .canal--active {
     background-color: #313338;
     color: #F3F4F5;
 }
+
 .server:before {
     content: "";
     display: block;
@@ -23,6 +25,7 @@ body {
     transform: translate(-50%, -50%);
     transition: all .3s;
 }
+
 .server--active:before {
     content: "";
     display: block;
@@ -36,6 +39,7 @@ body {
     transform: translate(-50%, -50%);
     transition: all .3s;
 }
+
 .server:hover:before {
     content: "";
     display: block;
@@ -49,6 +53,7 @@ body {
     transform: translate(-50%, -50%);
     transition: all .3s;
 }
+
 .online:before {
     content: "";
     display: block;
@@ -60,20 +65,37 @@ body {
     bottom: 5px;
     left: 25px;
 }
+
 .server__icon {
     border-radius: 100%;
     transition: all .3s;
 }
+
 .server__text {
     display: flex;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
 }
+
 .server__icon:hover {
     border-radius: 30%;
 }
+
 .server__icon:hover .server__text {
     opacity: 1;
     visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #303031;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #57575a;
+    border-radius: 20px;
 }

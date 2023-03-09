@@ -218,7 +218,7 @@ function renderCanal(): void {
   const canal = group?.canals.find((canal) => canal.id === currCanal.canal);
   const messageList = document.createElement('ul')
   messageList.className = 'flex flex-col-reverse gap-3 my-3 overflow-y-auto';
-  canal?.messages.forEach((message) => {
+  canal?.messages.reverse().forEach((message) => {
     const user = server?.users.find((x) => x.id === message.userId)
     const messageElement = document.createElement('li')
     messageElement.className = 'flex hover:bg-color-gray-400 px-4 py-2'
@@ -238,6 +238,7 @@ function renderCanal(): void {
     messageList.appendChild(messageElement)
   }
   messages.appendChild(messageList);
+  messages.scrollTop = messages.scrollHeight;
 }
 
 menuConfigsBtn?.addEventListener("click", () => {
@@ -264,4 +265,15 @@ menuConfigsItems.forEach((item) => {
         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
     </svg>`;
   })
+})
+
+window.addEventListener('click', (e) => {
+  const target = e.target as HTMLElement
+  if (menuConfigs?.classList.contains('flex') && target !== menuConfigsBtn) {
+    menuConfigs?.classList.add("hidden");
+    menuConfigs?.classList.remove("flex");
+    menuConfigsIcon.innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+    </svg>`;
+  }
 })
