@@ -7,25 +7,25 @@
       {
         "id": 0,
         "username": "Alexandr",
-        "avatar": "assets/icons/user.png",
+        "avatar": "assets/icons/profile.png",
         "online": false
       },
       {
         "id": 1,
         "username": "Kristina",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/user.png",
         "online": false
       },
       {
         "id": 2,
         "username": "Natalya",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/woman.png",
         "online": true
       },
       {
         "id": 3,
         "username": "Uiguuna",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/bear.png",
         "online": true
       }
     ],
@@ -393,31 +393,31 @@
       {
         "id": 0,
         "username": "Andrey",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/rabbit.png",
         "online": false
       },
       {
         "id": 1,
         "username": "Nikolay",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/user1.png",
         "online": false
       },
       {
         "id": 2,
         "username": "Igor",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/astronaut.png",
         "online": true
       },
       {
         "id": 3,
         "username": "Elena",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/cat.png",
         "online": false
       },
       {
         "id": 4,
         "username": "Ekaterina",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/girl.png",
         "online": true
       }
     ],
@@ -622,37 +622,37 @@
       {
         "id": 0,
         "username": "Anatoliy Ivanov",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/dog.png",
         "online": false
       },
       {
         "id": 1,
         "username": "Tatiana Sofronova",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/cat.png",
         "online": false
       },
       {
         "id": 2,
         "username": "Nadezhda",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/rabbit.png",
         "online": true
       },
       {
         "id": 3,
         "username": "Sayaana Ivanova",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/woman.png",
         "online": false
       },
       {
         "id": 4,
         "username": "Alena Lukovtseva",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/girl.png",
         "online": true
       },
       {
         "id": 5,
         "username": "Pavel Popov",
-        "avatar": "assets/icons/backstreet.png",
+        "avatar": "assets/icons/user.png",
         "online": false
       }
     ],
