@@ -32,4 +32,10 @@ type User = {
   online: boolean;
 };
 
-export { Canal, Group, User, Server };
+type State = {
+  server: number,
+  group: number,
+  canal: number
+}
+
+export { Canal, Group, User, Server, State };

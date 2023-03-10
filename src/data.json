@@ -790,13 +790,12 @@
         ]
       },
       {
-        "id": 0,
+        "id": 1,
         "title": "text channels",
         "type": "text",
         "canals": [
-          
           {
-            "id": 1,
+            "id": 0,
             "title": "questions",
             "messages": [
               {
@@ -822,12 +821,12 @@
             ]
           },
           {
-            "id": 2,
+            "id": 1,
             "title": "introductions",
             "messages": []
           },
           {
-            "id": 3,
+            "id": 2,
             "title": "tasks",
             "messages": [
               {
@@ -986,7 +985,7 @@
         ]
       },
       {
-        "id": 1,
+        "id": 2,
         "title": "random",
         "type": "text",
         "canals": [
@@ -1142,7 +1141,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "title": "голосовые каналы",
         "type": "voice",
         "canals": [

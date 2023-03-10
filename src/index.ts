@@ -1,11 +1,12 @@
 import "./styles/style.css";
 import data from "./data.json";
-import { User, Canal, Group } from './lib/types';
+import { User, Canal, Group } from "./lib/types";
+import addListeners from "./scripts/listeners";
 
-const menuConfigsBtn = document.getElementById("menu-button");
-const menuConfigsIcon = document.getElementById("menu-icon");
-const menuConfigs = document.getElementById("menu");
-const menuConfigsItems = document.querySelectorAll("#menu__item");
+// const menuConfigsBtn = document.getElementById("menu-button");
+// const menuConfigsIcon = document.getElementById("menu-icon");
+// const menuConfigs = document.getElementById("menu");
+// const menuConfigsItems = document.querySelectorAll("#menu__item");
 const serverList = document.getElementById("server__list");
 const canals = document.getElementById("canals");
 const serverTitle = document.getElementById("server__title");
@@ -14,23 +15,28 @@ const online = document.getElementById("online");
 const offline = document.getElementById("offline");
 const input = document.getElementById("input");
 const messages = document.getElementById("messages");
-const modal = document.getElementById("modal");
-const modalBtn = document.getElementById("modal__close");
-const modalOpeners = document.querySelectorAll("#modal__btn");
-const modalBox = document.getElementById("modal__box");
-const aside = document.getElementById("aside");
+// const modal = document.getElementById("modal");
+// const modalBtn = document.getElementById("modal__close");
+// const modalOpeners = document.querySelectorAll("#modal__btn");
+// const modalBox = document.getElementById("modal__box");
+// const aside = document.getElementById("aside");
 
-let currServer = 2;
-let currCanal = {
-  group: 2,
-  canal: 0,
-};
+// let currCanal = {
+//   server: 2,
+//   group: 2,
+//   canal: 0,
+// };
+localStorage.setItem("canal", "0");
+localStorage.setItem("group", "0");
+localStorage.setItem("server", "2");
+let canal = Number(localStorage.getItem('canal')) || 0;
+let group = Number(localStorage.getItem('group')) || 0;
+let server = Number(localStorage.getItem('server')) || 2;
 
 showPage();
+addListeners();
 
 function showPage(): void {
-  currCanal.canal = 0;
-  currCanal.group = 0;
   if (serverList) {
     while (serverList.firstChild) {
       serverList.removeChild(serverList.firstChild);
@@ -43,13 +49,19 @@ function showPage(): void {
 }
 
 function renderServer(icon: string, title: string, index: number): void {
+  const currServer = server;
   const serverElement = document.createElement("li");
   const classes = `relative flex flex-col items-center cursor-pointer server ${
     currServer === index ? "server--active" : ""
   }`;
   serverElement.className = classes;
   serverElement.addEventListener("click", () => {
-    currServer = index;
+    localStorage.setItem("server", `${index}`);
+    localStorage.setItem("group", '0');
+    localStorage.setItem("canal", '0');
+    server = index;
+    canal = 0;
+    group = 0;
     showPage();
   });
   serverElement.innerHTML = `<div class="bg-color-gray-400 overflow-hidden w-12 h-12 server__icon flex justify-center">
@@ -116,7 +128,6 @@ function renderGroups(groups: Group[], title: string): void {
     groupElement.addEventListener("click", (e) => {
       let elem;
       const t = e.target as HTMLElement;
-      console.log(t);
       if (t.nodeName === "svg") {
         elem = t;
       } else if (t.nodeName === "path") {
@@ -130,13 +141,7 @@ function renderGroups(groups: Group[], title: string): void {
           renderCanals(group.canals, groupIndex, canalList, group.type, true);
         } else {
           elem.classList.add("rotate");
-          renderCanals(
-            group.canals,
-            groupIndex,
-            canalList,
-            group.type,
-            false
-          );
+          renderCanals(group.canals, groupIndex, canalList, group.type, false);
         }
       }
     });
@@ -155,49 +160,60 @@ function renderCanals(
   groupType: string,
   isVisible: boolean
 ): void {
+  const currCanal = canal;
+  const currGroup = group;
   canalList.innerHTML = "";
   if (isVisible) {
     canals.forEach((canal, index) => {
       createCanals(canal, canalList, index, groupIndex, groupType);
     });
   } else {
-    const canal = canals.find(
-      (_, index) => currCanal.canal === index && currCanal.group === groupIndex
+    const canalData = canals.find(
+      (_, index) => currCanal === index && currGroup === groupIndex
     );
-    if (canal) {
-      createCanals(canal, canalList, currCanal.canal, groupIndex, groupType);
+    if (canalData) {
+      createCanals(canalData, canalList, currCanal, groupIndex, groupType);
+    } else {
+      group = 0
+      canal = 0
+      localStorage.setItem('group', '0')
+      localStorage.setItem('canal', '0')
+      showPage()
     }
   }
 }
 
 function createCanals(
-  canal: Canal,
+  canalData: Canal,
   canalList: HTMLElement,
   index: number,
   groupIndex: number,
   groupType: string
 ): void {
+  const currServer = server;
+  const currCanal = canal;
+  const currGroup = group;
   const canalElement = document.createElement("li");
   canalElement.addEventListener("click", () => {
-    currCanal = {
-      canal: index,
-      group: groupIndex,
-    };
+    localStorage.setItem("canal", `${index}`);
+    localStorage.setItem("group", `${groupIndex}`);
+    canal = index;
+    group = groupIndex;
     renderGroups(data[currServer].groups, data[currServer].title);
     renderCanal();
   });
   const classes = `rounded hover:bg-color-gray-300 hover:text-color-gray-100 p-2 flex cursor-pointer items-center gap-2 ${
-    currCanal.canal === index && currCanal.group === groupIndex
+    currCanal === index && currGroup === groupIndex
       ? "canal--active"
       : ""
   }`;
-  if (currCanal.canal === index && currCanal.group === groupIndex) {
+  if (currCanal === index && currGroup === groupIndex) {
     (
       canalTitle as HTMLElement
     ).innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="1" height="1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
     <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
-    </svg><p>${canal.title}</p>`;
-    (input as HTMLInputElement).placeholder = `Написать #${canal.title}`;
+    </svg><p>${canalData.title}</p>`;
+    (input as HTMLInputElement).placeholder = `Написать #${canalData.title}`;
   }
   canalElement.className = classes;
   let svg = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="1" height="1" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -209,23 +225,36 @@ function createCanals(
   </svg>
   `;
   }
-  canalElement.innerHTML = `${svg}<p>${canal.title}</p>`;
+  canalElement.innerHTML = `${svg}<p>${canalData.title}</p>`;
   canalList.appendChild(canalElement);
 }
 
 function renderCanal(): void {
+  const currServer = server;
+  const currCanal = canal;
+  const currGroup = group;
   if (messages) {
     while (messages.firstChild) {
       messages.removeChild(messages.firstChild);
     }
   }
-  const server = data.find((server) => server.id === currServer);
-  const group = server?.groups.find((group) => group.id === currCanal.group);
-  const canal = group?.canals.find((canal) => canal.id === currCanal.canal);
+  const serverData = data.find((server) => server.id === currServer);
+  const groupData = serverData?.groups.find((group) => group.id === currGroup);
+  if (!groupData) {
+    group = 0
+    localStorage.setItem('group', '0')
+    return showPage()
+  }
+  const canalData = groupData?.canals.find((canal) => canal.id === currCanal);
+  if (!canalData) {
+    canal = 0
+    localStorage.setItem('canal', '0')
+    return showPage()
+  }
   const messageList = document.createElement("ul");
   messageList.className = "flex flex-col-reverse gap-3 my-3 overflow-y-auto";
-  canal?.messages.reverse().forEach((message) => {
-    const user = server?.users.find((x) => x.id === message.userId);
+   canalData?.messages.reverse().forEach((message) => {
+    const user = serverData?.users.find((x) => x.id === message.userId);
     const messageElement = document.createElement("li");
     messageElement.className = "flex hover:bg-color-gray-400 px-4 py-2";
     messageElement.innerHTML = `<img class="w-10 h-10 mr-4" src="${user?.avatar}"/>
@@ -235,7 +264,7 @@ function renderCanal(): void {
     </div>`;
     messageList.appendChild(messageElement);
   });
-  if (!canal?.messages.length) {
+  if (!canalData?.messages.length) {
     const messageElement = document.createElement("div");
     messageElement.className =
       "flex flex-col justify-center items-center gap-5 mb-5";
@@ -250,84 +279,84 @@ function renderCanal(): void {
   }
 }
 
-function toggleMenu(): void {
-  if (menuConfigs?.classList.contains("open")) {
-    menuConfigs?.classList.remove("open");
-    (
-      menuConfigsIcon as HTMLElement
-    ).innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-</svg>
-  `;
-  } else {
-    menuConfigs?.classList.add("open");
-    (
-      menuConfigsIcon as HTMLElement
-    ).innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-  </svg>`;
-  }
-}
+// function toggleMenu(): void {
+//   if (menuConfigs?.classList.contains("open")) {
+//     menuConfigs?.classList.remove("open");
+//     (
+//       menuConfigsIcon as HTMLElement
+//     ).innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+//     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+// </svg>
+//   `;
+//   } else {
+//     menuConfigs?.classList.add("open");
+//     (
+//       menuConfigsIcon as HTMLElement
+//     ).innerHTML = `<svg class="-mr-1 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+//     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+//   </svg>`;
+//   }
+// }
 
-function openModal(): void {
-  modal?.classList.add("active");
-}
+// function openModal(): void {
+//   modal?.classList.add("active");
+// }
 
-menuConfigsBtn?.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMenu();
-});
+// menuConfigsBtn?.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   toggleMenu();
+// });
 
-menuConfigsItems.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation();
-    toggleMenu();
-    openModal();
-  });
-});
+// menuConfigsItems.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.stopPropagation();
+//     toggleMenu();
+//     openModal();
+//   });
+// });
 
-modalOpeners.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation();
-    openModal();
-  });
-});
+// modalOpeners.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.stopPropagation();
+//     openModal();
+//   });
+// });
 
-window.addEventListener("click", (e) => {
-  e.stopPropagation();
-  const target = e.target as HTMLElement;
-  if (
-    menuConfigs?.classList.contains("open") &&
-    target !== menuConfigsBtn &&
-    target !== menuConfigsIcon
-  ) {
-    toggleMenu();
-  }
-  if (modal?.classList.contains("active")) {
-    modal.classList.remove("active");
-  }
-});
+// window.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   const target = e.target as HTMLElement;
+//   if (
+//     menuConfigs?.classList.contains("open") &&
+//     target !== menuConfigsBtn &&
+//     target !== menuConfigsIcon
+//   ) {
+//     toggleMenu();
+//   }
+//   if (modal?.classList.contains("active")) {
+//     modal.classList.remove("active");
+//   }
+// });
 
-modalBox?.addEventListener("click", (e) => e.stopPropagation());
-modalBtn?.addEventListener("click", (e) => {
-  e.stopPropagation();
-  modal?.classList.remove("active");
-});
+// modalBox?.addEventListener("click", (e) => e.stopPropagation());
+// modalBtn?.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   modal?.classList.remove("active");
+// });
 
-aside?.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
+// aside?.addEventListener("click", (e) => {
+//   e.stopPropagation();
+// });
 
-input?.addEventListener("keyup", (e) => {
-  if (e.key === "Enter") {
-    (input as HTMLInputElement).value = "";
-  }
-});
+// input?.addEventListener("keyup", (e) => {
+//   if (e.key === "Enter") {
+//     (input as HTMLInputElement).value = "";
+//   }
+// });
 
-window.onload = function (): void {
-  document.body.classList.add("loaded_hiding");
-  window.setTimeout(function () {
-    document.body.classList.add("loaded");
-    document.body.classList.remove("loaded_hiding");
-  }, 2000);
-};
+// window.onload = function (): void {
+//   document.body.classList.add("loaded_hiding");
+//   window.setTimeout(function () {
+//     document.body.classList.add("loaded");
+//     document.body.classList.remove("loaded_hiding");
+//   }, 2000);
+// };
